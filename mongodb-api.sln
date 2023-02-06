@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mongodb-api", "mongodb-api\mongodb-api.csproj", "{418E186B-D5C3-4ADC-8E7B-C6352C56B215}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{6DEDD991-9497-4CBA-B172-2A1F553FB67D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{E09757C5-2F1D-4FA0-89FC-D27E4C9DAFC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{418E186B-D5C3-4ADC-8E7B-C6352C56B215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418E186B-D5C3-4ADC-8E7B-C6352C56B215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418E186B-D5C3-4ADC-8E7B-C6352C56B215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418E186B-D5C3-4ADC-8E7B-C6352C56B215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DEDD991-9497-4CBA-B172-2A1F553FB67D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DEDD991-9497-4CBA-B172-2A1F553FB67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DEDD991-9497-4CBA-B172-2A1F553FB67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DEDD991-9497-4CBA-B172-2A1F553FB67D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09757C5-2F1D-4FA0-89FC-D27E4C9DAFC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09757C5-2F1D-4FA0-89FC-D27E4C9DAFC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09757C5-2F1D-4FA0-89FC-D27E4C9DAFC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09757C5-2F1D-4FA0-89FC-D27E4C9DAFC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CACE004D-572F-475C-97C2-6CA8232B3D29}
+	EndGlobalSection
+EndGlobal
