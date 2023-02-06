@@ -585,6 +585,21 @@
         "runtime": {
           "bin/placeholder/Domain.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Domain": "1.0.0",
+          "Microsoft.Extensions.Options": "7.0.0",
+          "MongoDB.Driver": "2.19.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -1689,6 +1704,11 @@
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1698,6 +1718,7 @@
       "Microsoft.EntityFrameworkCore >= 7.0.2",
       "Microsoft.Extensions.Options >= 7.0.0",
       "MongoDB.Driver >= 2.19.0",
+      "Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -1730,6 +1751,9 @@
           "projectReferences": {
             "C:\\Users\\CedricJacquet\\source\\repos\\mongodb-api\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\CedricJacquet\\source\\repos\\mongodb-api\\Domain\\Domain.csproj"
+            },
+            "C:\\Users\\CedricJacquet\\source\\repos\\mongodb-api\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\CedricJacquet\\source\\repos\\mongodb-api\\Services\\Services.csproj"
             }
           }
         }

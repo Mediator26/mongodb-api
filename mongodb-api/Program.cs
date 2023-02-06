@@ -1,10 +1,13 @@
 using Domain;
+using Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.Configure<UsersDatabaseSettings>(
     builder.Configuration.GetSection("UsersDatabase"));
+
+builder.Services.AddSingleton<UsersServices>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

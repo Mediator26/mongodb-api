@@ -1,21 +1,24 @@
 ﻿using Domain;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
+using Services;
 using System.Security.Authentication;
 
 namespace mongodb_api.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("users")]
 public class UserController:ControllerBase
 {
-    [HttpGet(Name = "GetUser")]
-    public IEnumerable<User> FetchAll()
+    public readonly UsersServices _usersServices;
+
+    public UserController(UsersServices usersServices)
     {
-        return new List<User>
-        {
-            new User { Id = "1", Login = "L1", Password = "P1" },
-            new User { Id = "2", Login = "L2", Password = "P2" }
-        };
+        _usersServices = usersServices;
     }
+
+    [HttpGet]
+    public async Task<List<User>> Get() =>
+        await _usersServices.GetAsync();
+
 }

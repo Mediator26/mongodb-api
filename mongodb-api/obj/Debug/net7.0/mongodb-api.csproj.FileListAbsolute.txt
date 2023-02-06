@@ -48,3 +48,5 @@ C:\Users\CedricJacquet\source\repos\mongodb-api\mongodb-api\bin\Debug\net7.0\Zst
 C:\Users\CedricJacquet\source\repos\mongodb-api\mongodb-api\bin\Debug\net7.0\runtimes\linux\native\libmongocrypt.so
 C:\Users\CedricJacquet\source\repos\mongodb-api\mongodb-api\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\CedricJacquet\source\repos\mongodb-api\mongodb-api\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
+C:\Users\CedricJacquet\source\repos\mongodb-api\mongodb-api\bin\Debug\net7.0\Services.dll
+C:\Users\CedricJacquet\source\repos\mongodb-api\mongodb-api\bin\Debug\net7.0\Services.pdb
