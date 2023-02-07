@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using Services;
+using Services.Dtos;
 using System.Security.Authentication;
 
 namespace mongodb_api.Controllers;
@@ -20,5 +21,22 @@ public class UserController:ControllerBase
     [HttpGet]
     public async Task<List<User>> Get() =>
         await _usersServices.GetAsync();
+
+    [HttpPost]
+    public async Task<ActionResult<User>> Get(DtoInputLogin dto)
+    {
+        var user = await _usersServices.GetAsync(dto);
+
+        if (user is null)
+        {
+            return NotFound();
+        }
+        if(user.Password != dto.Password)
+        {
+            return Unauthorized();
+        }
+
+        return user;
+    }
 
 }

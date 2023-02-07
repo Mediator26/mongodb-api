@@ -1,6 +1,7 @@
 ﻿using Domain;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using Services.Dtos;
 
 namespace Services;
 
@@ -22,8 +23,8 @@ public class UsersServices
 
     public async Task<List<User>> GetAsync() =>
         await _usersCollection.Find(_ => true).ToListAsync();
-    public async Task<User?> GetAsync(string id) =>
-        await _usersCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+    public async Task<User?> GetAsync(DtoInputLogin dto) =>
+        await _usersCollection.Find(x => x.Login == dto.Login).FirstOrDefaultAsync();
 
     public async Task CreateAsync(User newUser) =>
         await _usersCollection.InsertOneAsync(newUser);
