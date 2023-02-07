@@ -11,4 +11,6 @@ public class User
     [BsonElement("Login")]
     public string Login { get; set; } = null!;
     public string Password { get; set;} = null!;
+    public string Sex { get; set; } = null!;
+    public string Sentence { get; set; } = null!;
 }
